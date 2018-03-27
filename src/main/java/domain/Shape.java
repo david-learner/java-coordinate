@@ -3,7 +3,7 @@ package domain;
 public class Shape {
     private int lineCount;
 
-    protected Shape (int lineCount) {
+    protected Shape(int lineCount) {
         this.lineCount = lineCount;
     }
 

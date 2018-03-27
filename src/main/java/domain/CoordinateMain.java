@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class CoordinateMain {
     public static void main(String[] args) {
         Boolean validation = true;
-        while(validation) {
+        while (validation) {
             PointList.makePoints(InputView.getCoordinates());
             validation = Validation.checkValidation(LineList.lines);
             if (validation) {
