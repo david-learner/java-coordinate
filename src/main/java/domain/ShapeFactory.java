@@ -2,7 +2,7 @@ package domain;
 
 import java.util.ArrayList;
 
-public class ShapeFactory extends Exception {
+public class ShapeFactory {
     public static Shape getInstance(ArrayList<Point> points, LineList lineList) {
         Shape shape = null;
         if (ShapeType.LINE.isLine(points.size())) {
