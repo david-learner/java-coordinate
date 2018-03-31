@@ -62,6 +62,12 @@ public class ResultView {
         }
     }
 
+    /*
+    만약, Shape에서 line만 별개로 떼어낸다면, Triangle과 Rectangle을
+    하나의 추상 클래스로 묶어낼 수 있다. 그러면 굳이 hasLineCount로 어떤 shape인지
+    구분할 필요가 없으며, ShapeFactory에서 생성할 때만 신경써주면 된다.
+    다형성으로 인해 각각의 클래스(Triangle, Rectangle)에서 재정의된 메소드가 호출될테니.
+     */
     public static void printCalculation(Shape shape) {
         if (shape.hasLineCount(shapeType.LINE.getLineCount())) {
             Line line = (Line) shape;
